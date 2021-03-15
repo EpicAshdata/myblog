@@ -4,9 +4,10 @@
       <ul>
         <li v-for="item in notecontent" :key="item.date">
           <div class="titleanddate"><span>{{item.title}}/{{item.date}}</span></div>
-          <div class="content">
-            <p>{{item.content}}</p>
-          </div>
+<!--          <div class="content">-->
+<!--            <p>{{item.content}}</p>-->
+<!--          </div>-->
+          <textarea name="" id="" class="content" cols="30" rows="10" v-model="item.content"></textarea>
           <div class="author">
             <span>{{item.author}}</span>
           </div>
@@ -113,6 +114,7 @@
     background-color: black;
     white-space: normal;
     border-radius: 10px;
+    resize: none;
   }
 
   .totalnote .author {

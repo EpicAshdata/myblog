@@ -7,9 +7,11 @@
       <span>出版日期</span><input type="text" class="date" v-model="form.date">
       <span>出版社</span><input type="text" class="press" v-model="form.press">
       <span>封面</span>
-      <elementui @onUpload="getcover" ref="imgUpload"></elementui>
-      <input type="text" class="cover" v-model="form.cover">
-      <div class="submitimg">上传图片</div>
+      <div class="main_cover">
+        <elementui @onUpload="getcover" ref="imgUpload"></elementui>
+        <input type="text" class="cover" v-model="form.cover">
+        <div class="submitimg">上传图片</div>
+      </div>
       <span>图书简介</span><input type="text" class="abs" v-model="form.abs">
       <span>图书类别</span>
       <select name="bookcatrgory" id="" class="category" v-model="form.category.id">
@@ -168,10 +170,14 @@
     background-color: #9c41c5;
   }
 
+  .main_cover {
+    vertical-align: center;
+  }
   .submitimg{
     text-align: center;
+    display: inline-block;
     position: absolute;
-    top: 445px;
+    top: 465px;
     right: 70px;
     width: 70px;
     height: 30px;

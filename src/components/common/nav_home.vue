@@ -51,7 +51,7 @@
            </ul>
          </article></div>
      </router-link>
-    <router-link to="/personview" class="r_div">
+    <router-link to="/personal" class="r_div">
       <div class="a_div"><a href="" class="btn4">个人中心</a>
         <article class="personal">
           <ul>
@@ -74,7 +74,7 @@
           </ul>
         </article></div>
     </router-link>
-      <router-link to="/videoview" class="r_div">
+      <router-link to="/video" class="r_div">
         <div class="a_div"><a href="" class="btn5">放映厅</a>
           <article class="video">
             <ul>
@@ -112,7 +112,8 @@
             return{
                 navability: [
                     {}
-                ]
+                ],
+                SkipSwitchName: '',
             }
         },
         methods: {
@@ -126,7 +127,16 @@
                 this.$router.replace('/library')
             },
 
-        }
+        },
+        watch: {
+            '$route'(to,from){
+                // console.log(to);
+                // console.log(from);
+                if(to != from) {
+                    this.SkipSwitchName = 'Skright'
+                }
+            }
+        },
     }
 </script>
 
@@ -336,4 +346,7 @@
   .r_div .a_div:hover>article {
     display: block;
   }
+
+
+
 </style>

@@ -39,8 +39,9 @@
     opacity: 0;
     width: 10px;
     height: 10px;
+    float: left;
     display: inline;
-    top: 445px;
+    top: 465px;
     right: 130px;
     z-index: 2;
     cursor: pointer;

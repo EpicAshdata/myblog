@@ -54,7 +54,7 @@
             <div slot="searrouter"></div>
           </booksearch>
       </div>
-      <router-view></router-view>
+        <router-view></router-view>
     </section>
   </div>
 </template>
@@ -70,6 +70,8 @@
                 books: [],
                 currentPage: 1,
                 pagesize: 17,
+                skip: '',
+
             }
         },
         components: {
@@ -121,6 +123,13 @@
             })
             this.loadbooks()
         },
+        watch: {
+            '$route'(to,from){
+                console.log(to);
+                console.log(from);
+                this.transitionName = 'fold-left'
+            }
+        }
     }
 </script>
 
@@ -208,5 +217,44 @@
     left: calc(50% - 30%);
     margin-left: 50px;
     overflow: hidden;
+  }
+
+  .fold-left-enter-active {
+    animation-name: fold-left-in;
+    animation-duration: 2s;
+  }
+  .fold-left-leave-active {
+    animation-name: fold-left-out;
+    animation-duration: 2s;
+  }
+  .fold-right-enter-active {
+    animation-name: fold-right-in;
+    animation-duration: .3s;
+  }
+  .fold-right-leave-active {
+    animation-name: fold-right-out;
+    animation-duration: .3s;
+  }
+  @keyframes fold-left-in {
+    0% {
+      transform:rotateY(0)translate3d(100%, 0, 0);
+    }
+    50% {
+      transform:rotateY(-15deg) translate3d(50%, 0, 0);
+    }
+    100% {
+      transform:rotateY(0) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fold-left-out {
+    0% {
+      transform:rotateY(0) translate3d(0, 0, 0);
+    }
+    50% {
+      transform:rotateY(15deg) translate3d(-50%, 0, 0);
+    }
+    100% {
+      transform:rotateY(0deg) translate3d(-100%, 0, 0);
+    }
   }
 </style>

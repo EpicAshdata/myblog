@@ -14,6 +14,9 @@ import Regis from "@/views/login/Regis";
 import Note from "@/components/content/Note";
 import addnote from "@/views/note/content/addnote";
 import totalnote from "@/views/note/content/totalnote";
+// import videoview from "@/views/videoshow/videoview";
+import video from "@/components/content/video";
+import personal from "@/components/content/personal";
 // import Personalview from "@/views/personal/Personalview";
 Vue.use(VueRouter)
 const routes = [
@@ -85,6 +88,14 @@ const routes = [
                         component: totalnote
                     }
                 ]
+            },
+            {
+                path: '/video',
+                component: video,
+            },
+            {
+                path: '/personal',
+                component: personal,
             }
         ]
     }

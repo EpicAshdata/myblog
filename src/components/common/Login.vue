@@ -151,12 +151,16 @@
     width: 500px;
     top: calc(50% - 250px);
     left: calc(50% - 250px);
+    border: #65f965 2px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px #65f965;
     /*background-color: #65f965;*/
     text-align: center;
   }
   .login_main p{
     margin-top: 20px;
-    font: bolder 40px  '' ;
+    font: bolder 40px '华文彩云';
+    text-shadow: #65f965;
     display: inline-block;
     height: 10%;
     width: 100%;
@@ -178,19 +182,24 @@
     border-radius: 15px;
     text-align: center;
     border: 2px solid #65f965;
-    /*background-color:#9c41c5;*/
+    color: #65f965;
+    background-color:black;
+    outline: none;
   }
   .login_main button {
     display: inline-block;
   }
   .loginbtn {
-    margin-top: 10px;
+    /*margin-top: 20px;*/
     width: 80%;
     height: 10%;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 15px;
+    border: #65f965 2px solid;
     font: 35px '';
-    background-color: #9c41c5;
+    color: #65f965;
+    outline: none;
+    background-color: black;
   }
   .login_main .tips {
     font: 15px '';
@@ -239,20 +248,22 @@
     width: 100px;
     line-height: 40px;
     color: #65f965;
-    /*background-color: #9c41c5;*/
   }
   .theform span, .theform input{
     margin-top: 30px;
     height: 40px;
     font: 25px '';
+
   }
   .theform .usern,.theform .user {
     margin-top: 10px;
   }
   .theform input {
+    background-color: black;
     margin-left: 5px;
     width: 200px;
     outline: none;
+    color: #65f965;
     border-radius: 5px;
     border: 3px #65f965 solid;
   }
@@ -264,6 +275,8 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
+    color: #65f965;
     border: #65f965 5px solid;
+    background-color: black;
   }
 </style>

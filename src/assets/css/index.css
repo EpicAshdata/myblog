@@ -3,13 +3,6 @@
   padding: 0;
 }
 @font-face {
-  font-family: 'icomoon';
-  src:  url('~fonts/icomoon.eot?m3qrej');
-  src:  url('~fonts/icomoon.eot?m3qrej#iefix') format('embedded-opentype'),
-  url('~fonts/icomoon.ttf?m3qrej') format('truetype'),
-  url('~fonts/icomoon.woff?m3qrej') format('woff'),
-  url('~fonts/icomoon.svg?m3qrej#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+  font-family: 'kongxing';
+  src: url("~assets/img/fonts/王汉宗标楷体-空心.ttf");
 }

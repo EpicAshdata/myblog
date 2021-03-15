@@ -136,7 +136,7 @@
     padding: 10px 10px;
     color: #65f965;
     background-color: black;
-    white-space: normal;
+    white-space: pre-wrap;
     border-radius: 10px;
     /*overflow-y: scroll;*/
     /*scrollbar-base-color: #65f965;*/

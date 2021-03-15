@@ -5,6 +5,7 @@ import store from "@/store";
 // import {request} from "@/network";
 import 'element-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
+
 var axios = require('axios')
 Vue.prototype.$axios = axios
 axios.defaults.baseURL = 'http://localhost:8443/api'
